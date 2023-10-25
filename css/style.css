@@ -75,6 +75,33 @@ a {
 .navlink-text {
     display: flex;
     padding: 24px 0;
+    position: relative;
+}
+
+.navlink-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: #2E2F42;
+}
+
+.current-page {
+    color: #404BBF;
+}
+
+.navlink-text.current-page::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
+    color: #404BBF;
 }
 
 .contacts-list {
@@ -276,22 +303,17 @@ a {
     border-radius: 50%;
     background-color: #4D5AE5;
 }
-
-.navlink-text {
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    color: #2E2F42;
+.sociallink:hover {
+    background-color: #404BBF;
 }
+
+
+
 
 .contact-text {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
-    /* font-weight: 500; */
     line-height: 24px;
     letter-spacing: 0.32px;
     color: #434455;
@@ -302,11 +324,13 @@ a {
     color: #404BBF;
 }
 
-.navlink-text:hover,
+/* .navlink-text:hover,
 .navlink-text:focus {
     color: #404BBF;
     text-decoration: underline;
-}
+} */
+
+
 
 .body-text {
     font-family: Roboto;
@@ -441,4 +465,8 @@ a {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: #fff;
-    }
+}
+
+.footer-soc-link:hover {
+    background-color: #31D0AA;
+}
