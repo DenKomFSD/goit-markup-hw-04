@@ -495,13 +495,14 @@ a {
     display: flex;
     justify-content: start;
     flex-direction: row;
+    align-items: baseline;
 
 }
 .footer-socials {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    gap: 16px;
+
 }
 
 .footer-info {
@@ -533,8 +534,14 @@ a {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: #fff;
+    margin-bottom: 16px;
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
     background-color: #31D0AA;
+}
+
+.ft-icon {
+    fill: #f4f4fd;
 }
