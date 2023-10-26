@@ -60,6 +60,7 @@ a {
 .main-header {
     /* padding: 24px 0; */
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logonav {
@@ -139,12 +140,11 @@ a {
 /* HERO SECTION */
 .hero-section {
     background-color: #2e2f42;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-        ),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-image.png);
-    background-size: cover;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -184,12 +184,12 @@ a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 16px 32px;
     min-width: 169px;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-cta:focus,
 .order-cta:hover {
-    background: #404BBF;
+    background-color: #404BBF;
 
 }
 
@@ -207,6 +207,10 @@ a {
 }
 
 .adv-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
     background-color: #F4F4FD;
     padding: 24px 100px;
     border-radius: 4px;
@@ -466,9 +470,9 @@ a {
     width: 100%;
     height: 100%;
     background-color: #4D5AE5;
-    color: #FFFFFF;
+    color: #f4f4fd;
     box-shadow: none;
-    padding: 40px 32px 164px 32px;
+    padding: 40px 32px;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
