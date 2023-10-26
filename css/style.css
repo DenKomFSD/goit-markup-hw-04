@@ -144,6 +144,7 @@ a {
         rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-image.png);
+    background-size: cover;    
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
