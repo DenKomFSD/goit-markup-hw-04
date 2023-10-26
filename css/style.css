@@ -319,9 +319,7 @@ a {
     gap: 24px;
 }
 
-.teamicons-item {
-    fill: #f4f4fd;
-}
+
 
 .sociallink {
     display: flex;
@@ -546,5 +544,9 @@ a {
 }
 
 .ft-icon {
+    fill: #f4f4fd;
+}
+
+.ot-icon {
     fill: #f4f4fd;
 }
