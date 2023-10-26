@@ -317,7 +317,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 24px;
+    gap: 24px;
+}
+
+.our-team-icons-socials {
+    fill: #f4f4fd;
 }
 
 .sociallink {
